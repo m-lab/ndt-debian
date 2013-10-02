@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_clean:
+	rm -f I2util/I2util/stamp-h.in
+	dh_clean
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$$(pwd)/debian/ndt prefix=/usr install

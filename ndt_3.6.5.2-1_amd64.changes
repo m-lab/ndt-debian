@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Wed, 02 Oct 2013 10:43:36 -0700
+Source: ndt
+Binary: web100srv web100clt
+Architecture: source amd64
+Version: 3.6.5.2-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Dominic Hamon <dominic@google.com>
+Changed-By: Dominic Hamon <dominic@google.com>
+Description: 
+ web100clt  - NDT client
+ web100srv  - NDT server
+Changes: 
+ ndt (3.6.5.2-1) UNRELEASED; urgency=low
+ .
+   * Initial release. (Closes: #XXXXXX)
+Checksums-Sha1: 
+ 4919132814166b0c3d6eb8ee22f4424fa058e796 808 ndt_3.6.5.2-1.dsc
+ 533a7dbb1b660a0148a0e295b481f63ab9ecb8f7 733168 ndt_3.6.5.2.orig.tar.gz
+ 54208d4cc105cfaf9b7031c2f01219504732a8a5 3078 ndt_3.6.5.2-1.debian.tar.gz
+ cb036a7aafbad22b38938add4b3d8690a30230c7 2664 web100srv_3.6.5.2-1_amd64.deb
+ 64823e2ad625d940e0e5fd12bba6bd0ddec363c3 2684 web100clt_3.6.5.2-1_amd64.deb
+Checksums-Sha256: 
+ 2d57cd05a96537c7be23bd10e065b53d67c1b794c21083de5611c913f775dbb4 808 ndt_3.6.5.2-1.dsc
+ ce9d782bb31f118325a01d4918b259e1049565e9cbaacfec8f9efce27409fdde 733168 ndt_3.6.5.2.orig.tar.gz
+ 8f8c8630aeafe80be02555312319f8f8d67ab6ff88ef64f8bf11d0edb74ee933 3078 ndt_3.6.5.2-1.debian.tar.gz
+ 457c008232c482c2ee5107dbf9602589e358ad2b896ef7460ab90626be8717b9 2664 web100srv_3.6.5.2-1_amd64.deb
+ d364a89e90ef62e4a9aa9215dd0b2cd037192ee651f581624a03bcb5d5e0d0d1 2684 web100clt_3.6.5.2-1_amd64.deb
+Files: 
+ c743cfe812b4563962c422bc2f9de71c 808 misc optional ndt_3.6.5.2-1.dsc
+ 7ee4ddaa29bb1015a7019923f6de109f 733168 misc optional ndt_3.6.5.2.orig.tar.gz
+ 8053b4b1c496724b43ccad7c8ba3db4e 3078 misc optional ndt_3.6.5.2-1.debian.tar.gz
+ d2cd718617587e72d66df2a4042e0f04 2664 misc optional web100srv_3.6.5.2-1_amd64.deb
+ f1ecac6e8ff9b98faa3ac87ff63bdaab 2684 misc optional web100clt_3.6.5.2-1_amd64.deb
