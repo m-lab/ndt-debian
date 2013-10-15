@@ -1,8 +1,8 @@
 Description: Fix sdatadir target to reference $(DESTDIR)
 Author:      Dominic Hamon <dominic@google.com>
 Last-Update: 2013-10-02
---- a/Makefile.in	2013-09-24 06:49:41.000000000 -0700
-+++ b/Makefile.in	2013-10-02 11:54:33.480777000 -0700
+--- a/Makefile.in	2013-10-15 14:34:40.208611000 -0700
++++ b/Makefile.in	2013-10-15 14:34:47.878684000 -0700
 @@ -676,7 +676,7 @@ uninstall-info: uninstall-info-recursive
  
  

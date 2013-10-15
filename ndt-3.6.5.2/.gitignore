@@ -2,4 +2,8 @@ Applet/Tcpbw100.jar
 I2util/I2util/libI2util.a
 config.log
 janalyze/dist/JAnalyze.jar
-
+.pc/
+*.class
+*.o
+config.h
+config.status

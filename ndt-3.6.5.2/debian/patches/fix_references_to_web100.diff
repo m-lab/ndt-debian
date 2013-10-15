@@ -1,0 +1,11 @@
+--- a/configure.ac	2013-10-15 14:34:53.877734000 -0700
++++ b/configure.ac	2013-10-15 14:36:08.499382000 -0700
+@@ -136,7 +136,7 @@ AC_SUBST(I2UTILINCS)
+ AC_CHECK_LIB([web100], [web100_snap],
+              [
+               LINKED_WEB100LIB="-lweb100"
+-              INCLUDED_WEB100LIB="-I/usr/local/include/web100"
++              INCLUDED_WEB100LIB="-I/usr/include/web100"
+               AC_DEFINE(HAVE_LIBWEB100, 1, [Define to 1 if you have the 'Web100' library (-lweb100).])
+               AM_CONDITIONAL(HAVE_WEB100, true)
+               ],

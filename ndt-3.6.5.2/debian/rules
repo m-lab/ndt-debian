@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+HAVE_LIBWEB100=1
+
 %:
 	dh $@
 
@@ -8,3 +11,7 @@ override_dh_clean:
 
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/ndt prefix=/usr install
+
+# TODO: remove before submit
+override_dh_shlibdeps:
+	    dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
