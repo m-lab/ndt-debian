@@ -1,3 +1,5 @@
 fix_I2util_paths_in_configure.diff
 fix_path_to_serverdata_in_Makefile.diff
 fix_references_to_web100.diff
+fix_config.h.in.diff
+remove_rpath.diff

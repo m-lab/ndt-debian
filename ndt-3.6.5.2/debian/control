@@ -3,17 +3,27 @@ Maintainer: Dominic Hamon <dominic@google.com>
 Section: utils
 Priority: optional
 Standards-Version: 3.9.3
-Build-Depends:	autotools-dev,
-		debhelper (>= 9),
-		libpcap-dev,
-		libweb100-0
+Build-Depends: autotools-dev, debhelper (>= 9), libpcap-dev, libweb100-0
 Homepage: http://www.internet2.edu/performance/ndt/
 
-# TODO: split this into server/client
-Package: ndt
+Package: ndt-applet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: NDT server and client
-	NDT server that enables end users to run performance tests and
-	a command line tool and applet for scheduling bandwidth measurements
-	with that server.
+Description: NDT applet
+	NDT is a network diagnostic tool. This applet runs performance tests
+	against NDT servers.
+
+Package: ndt-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: NDT client
+	NDT is a network diagnostic tool. This command-line client runs
+	performance tests against NDT servers.
+
+Package: ndt-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: NDT server 
+	NDT server that enables end users to run performance tests from
+	ndt-client or ndt-applet.
+

@@ -1,1 +1,12 @@
-ndt/
+files
+ndt-applet.debhelper.log
+ndt-applet.substvars
+ndt-applet/
+ndt-client.debhelper.log
+ndt-client.substvars
+ndt-client/
+ndt-server.debhelper.log
+ndt-server.substvars
+ndt-server/
+tmp/
+
